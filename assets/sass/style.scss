@@ -1,14 +1,28 @@
 @import "_variables";
 
 #mobileWrapper{
-    width: 100%;
-    max-width: 375px;
-    // height: 100vh;
+    width: 400px;
+    max-width: 100%;
+    height: 100vh;
     // max-height: 812px;
     // overflow-y: auto;
     border: 1px solid;
-    min-height: 812px;
+    // min-height: 812px;
     margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    max-width: 400px;
+    top: 0;
+}
+
+.page-body{
+    margin-top: 85px;
 }
 
 #brand{ 
@@ -23,7 +37,7 @@
 
 .authbg{
     background:url('./../images/authbg.png');
-    background-size: contain;
+    background-size: cover;
 }
 
 .font-oswald{
@@ -100,6 +114,18 @@ table{
     display: inline-block;
     text-align: center;
     line-height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.trbncheck>input[type="checkbox"]+label{
+    width: 59px;
+    height: 35px;
+    background: #E8ECF1;
+    color: #566D92;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
     margin-top: 5px;
     cursor: pointer;
 }

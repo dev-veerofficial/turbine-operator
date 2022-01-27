@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="mobileWrapper" class="">
+        <header class="bg-p py-3 px-4">
+            <div class="d-flex justify-content-between text-light">
+                <div class="d1 h-l"> <a href="index.html" class="text-light"><i class="fa fa-arrow-left"></i></a></div>
+                <div class="page-title font-oswald h-m">Daily Logs</div>
+                <div class="d1 h-l"><a href="log-activity.html" class="text-light"><i class="fa fa-plus-circle"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="page-body">
+            <div class="table-responsive mt-3 px-2">
+                <table class="table  table-borderless">
+                    <thead class="bg-light txt-dark txt-grey">
+                        <tr>
+                            <th>Date</th>
+                            <th>Site</th>
+                            <th>Trbn</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05/01/2022</td>
+                            <td>Drumdeevan</td>
+                            <td class="text-center">7</td>
+                            <td>
+                                <input type="checkbox" name="updatecbx1" id="updatecbx1" class="updatecbx">
+                                <label for="updatecbx1" class="updatecheck" onclick="showToast()"> U </label>
+
+                                <a href="view-log.html" class="btn-vxs"><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>05/01/2022</td>
+                            <td>Drumdeevan</td>
+                            <td class="text-center">7</td>
+                            <td>
+                                <input type="checkbox" name="updatecbx2" id="updatecbx2" class="updatecbx">
+                                <label for="updatecbx2" class="updatecheck" onclick="showToast()"> U </label>
+
+                                <a href="view-log.html" class="btn-vxs"><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>05/01/2022</td>
+                            <td>Drumdeevan</td>
+                            <td class="text-center">7</td>
+                            <td>
+                                <input type="checkbox" name="updatecbx3" id="updatecbx3" class="updatecbx">
+                                <label for="updatecbx3" class="updatecheck" onclick="showToast()"> U </label>
+
+                                <a href="view-log.html" class="btn-vxs"><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>05/01/2022</td>
+                            <td>Drumdeevan</td>
+                            <td class="text-center">7</td>
+                            <td>
+                                <input type="checkbox" name="updatecbx4" id="updatecbx4" class="updatecbx">
+                                <label for="updatecbx4" class="updatecheck" onclick="showToast()"> U </label>
+
+                                <a href="view-log.html" class="btn-vxs"><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>05/01/2022</td>
+                            <td>Drumdeevan</td>
+                            <td class="text-center">7</td>
+                            <td>
+                                <input type="checkbox" name="updatecbx5" id="updatecbx5" class="updatecbx">
+                                <label for="updatecbx5" class="updatecheck" onclick="showToast()"> U </label>
+
+                                <a href="view-log.html" class="btn-vxs"><i class="fa fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!--  -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script>
+        function showToast(){
+            alert('Status Updated Successfully');
+        }
+    </script>
+</body>
+
+</html>

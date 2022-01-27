@@ -1,0 +1,113 @@
+@import "_variables";
+
+#mobileWrapper{
+    width: 100%;
+    max-width: 375px;
+    // height: 100vh;
+    // max-height: 812px;
+    // overflow-y: auto;
+    border: 1px solid;
+    min-height: 812px;
+    margin: 0 auto;
+}
+
+#brand{ 
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    img{
+        max-width: 250px;
+    }
+}
+
+.authbg{
+    background:url('./../images/authbg.png');
+    background-size: contain;
+}
+
+.font-oswald{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.vinput{
+    background:#e1e6ee;
+    height: 45px;
+    border-radius: 5pt;
+    border: none;
+    &:focus{
+        border: 1px solid #E1E6EE;
+        background-color: rgba(225,230,238,0.2);
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.vinput.input-mini{
+    width: 60px;
+    height: 35px;
+}
+.vinput.input-med{
+    width: 135px;
+    height: 35px;
+}
+
+textarea.vinput{height: auto;}
+
+.updatecbx{display: none;}
+.updatecbx+label{
+    background-color: #FF5A5A;
+    color: #fff;
+    padding: 3px 12px;
+    margin: 0 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.updatecbx:checked+label{
+    background: seagreen;
+}
+
+// .table-striped tr:nth-child(odd) td{
+//     background-color: rgba(230, 237, 248, 0.1) !important;
+// }
+
+.btn-vxs{
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 1px 0px 5px 5px rgba(225,230,238,0.5);
+    padding: 5px 9px;
+    border-radius: 2px;
+}
+
+table{
+    thead>tr{
+        background-color: #fff !important;
+        color: #566D92;
+        
+    }
+    tr:nth-child(odd){
+        background-color: #E6EDF8;
+    }
+}
+
+.trbntag, .trbncheck>input[type="checkbox"]+label{
+    width: 50px;
+    height: 30px;
+    background: #E8ECF1;
+    color: #566D92;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.trbncheck>input[type="checkbox"]{
+    display: none;
+}
+.trbncheck>input[type="checkbox"]:checked+label{
+    background-color: $color-p;
+    color: $color-light;
+}
